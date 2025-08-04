@@ -50,6 +50,13 @@ enum class Skill(
         iconResLight = Res.Images.KOTLIN,
         iconResDark = Res.Images.KOTLIN,
     ),
+    Cpp(
+        skillName = "C++",
+        level = "intermediate",
+        iconResLight = Res.Images.CPP,
+        iconResDark = Res.Images.CPP,
+
+        ),
     Spring(
         skillName = "Spring Framework",
         level = "Skilled",

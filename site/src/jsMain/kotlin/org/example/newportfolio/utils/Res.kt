@@ -41,6 +41,7 @@ object Res {
 
         const val JAVA = "images/java.svg"
         const val KOTLIN = "images/kotlin.svg"
+        const val CPP = "images/cpp.svg"
 
         const val SPRING = "images/spring.svg"
         const val THYMELEAF = "images/thymeleaf.svg"
