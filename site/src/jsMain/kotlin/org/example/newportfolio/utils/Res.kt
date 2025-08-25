@@ -4,7 +4,7 @@ object Res {
 
     object Strings {
         const val START_SECTION_TITLE = "Hugo Alvarez Ajenjo"
-        const val START_SECTION_SUBTITLE = "A Passionate Software Engineer."
+        const val START_SECTION_SUBTITLE = "Jr Software Development Engeneer at Amazon"
         const val START_SECTION_BUTTON_TEXT = "Explore my projects"
 
         const val WORKS_SECTION_TITLE = "Explore my Projects"
@@ -14,7 +14,7 @@ object Res {
 
         const val CONTACT_SECTION_TITLE = "Contact me"
 
-        const val EMAIL_ADDRESS = "hugo.alvarezajenjo@gmail.com"
+        const val EMAIL_ADDRESS = "hugo.alvarez.work@gmail.com"
 
         const val EMAIL_LINK = "mailto:$EMAIL_ADDRESS"
         const val GITHUB_LINK = "https://github.com/HugoAlvarezAjenjo"
