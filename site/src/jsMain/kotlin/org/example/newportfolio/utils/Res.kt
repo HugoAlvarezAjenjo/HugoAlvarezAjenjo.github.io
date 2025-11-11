@@ -4,7 +4,7 @@ object Res {
 
     object Strings {
         const val START_SECTION_TITLE = "Hugo Alvarez Ajenjo"
-        const val START_SECTION_SUBTITLE = "Jr Software Development Engeneer at Amazon"
+        const val START_SECTION_SUBTITLE = "Jr Software Development Engineer at Amazon"
         const val START_SECTION_BUTTON_TEXT = "Explore my projects"
 
         const val WORKS_SECTION_TITLE = "Explore my Projects"
