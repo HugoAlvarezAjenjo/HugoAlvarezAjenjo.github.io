@@ -7,10 +7,12 @@ object Res {
         const val START_SECTION_SUBTITLE = "Jr Software Development Engineer at Amazon"
         const val START_SECTION_BUTTON_TEXT = "Explore my projects"
 
+        const val EXPERIENCE_SECTION_TITLE = "Experience"
+
         const val WORKS_SECTION_TITLE = "Explore my Projects"
 
         const val ABOUT_SECTION_TITLE = "About me"
-        const val ABOUT_SECTION_SUBTITLE = "Software Engineering student at UPM, passionate about computing and continuous learning. I'm interested in web development, with experience in Spring Boot and other technologies. Always exploring new tools to keep growing."
+        const val ABOUT_SECTION_SUBTITLE = "Software Development Engineer at Amazon with a degree in Software Engineering from UPM. Passionate about building reliable software, solving complex problems, and continuous learning. Always exploring new tools and technologies to keep growing."
 
         const val CONTACT_SECTION_TITLE = "Contact me"
 
