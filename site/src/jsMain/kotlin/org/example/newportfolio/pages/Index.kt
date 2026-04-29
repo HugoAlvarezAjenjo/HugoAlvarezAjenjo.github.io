@@ -9,11 +9,13 @@ import com.varabyte.kobweb.compose.ui.modifiers.color
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.core.Page
 import org.example.newportfolio.components.layouts.DefaultPageLayout
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
 import org.example.newportfolio.components.sections.about.AboutSection
 import org.example.newportfolio.components.sections.contact.ContactSection
 import org.example.newportfolio.components.sections.experience.ExperienceSection
 import org.example.newportfolio.components.sections.start.StartSection
 import org.example.newportfolio.components.sections.works.WorksSection
+import org.example.newportfolio.components.widgets.section.ScrollReveal
 
 @Page
 @Composable
@@ -24,10 +26,18 @@ fun HomePage() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             StartSection()
-            AboutSection()
-            ExperienceSection()
-            WorksSection()
-            ContactSection()
+            ScrollReveal {
+                AboutSection()
+            }
+            ScrollReveal(delayMs = 100) {
+                ExperienceSection()
+            }
+            ScrollReveal(delayMs = 100) {
+                WorksSection()
+            }
+            ScrollReveal(delayMs = 100) {
+                ContactSection()
+            }
         }
     }
 }

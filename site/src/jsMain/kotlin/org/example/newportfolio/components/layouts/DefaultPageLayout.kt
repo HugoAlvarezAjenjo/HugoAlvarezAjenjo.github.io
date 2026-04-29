@@ -9,6 +9,7 @@ import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import kotlinx.browser.document
+import kotlinx.browser.window
 
 @Composable
 fun DefaultPageLayout(
@@ -17,6 +18,8 @@ fun DefaultPageLayout(
 ) {
     LaunchedEffect(title) {
         document.title = "Hugo Alvarez"
+        window.scrollTo(0.0, 0.0)
+        window.history.replaceState(null, "", "/")
     }
 
     Column(

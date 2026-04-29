@@ -22,7 +22,6 @@ object Res {
         const val GITHUB_LINK = "https://github.com/HugoAlvarezAjenjo"
         const val LINKEDIN_LINK = "https://www.linkedin.com/in/Hugo-Alvarez-Ajenjo"
 
-        const val COPYRIGHT = "© 2025, Hugo Alvarez Ajenjo"
     }
 
     object FontFamilies {
@@ -33,7 +32,6 @@ object Res {
     object Images {
         const val LOGO_DARK = "images/logo_mini.svg"
         const val LOGO_LIGHT = "images/logo_mini.svg"
-        const val KOBWEB = "images/kobweb.png"
 
         const val START_IMAGE = "images/start_imagee.svg"
 

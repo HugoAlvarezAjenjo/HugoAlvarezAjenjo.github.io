@@ -8,7 +8,6 @@ import org.example.newportfolio.models.Social
 import org.example.newportfolio.theme.fonts.LabelLargeTextStyle
 import org.example.newportfolio.theme.fonts.TextStyle
 import org.example.newportfolio.theme.fonts.TextStyleSecondaryColor
-import org.example.newportfolio.utils.Res
 import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Box
@@ -17,10 +16,8 @@ import com.varabyte.kobweb.compose.foundation.layout.Row
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.*
-import com.varabyte.kobweb.silk.components.graphics.Image
 import com.varabyte.kobweb.silk.components.layout.breakpoint.displayIfAtLeast
 import com.varabyte.kobweb.silk.components.layout.breakpoint.displayUntil
-import com.varabyte.kobweb.silk.components.navigation.Link
 import com.varabyte.kobweb.silk.components.style.ComponentStyle
 import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
 import com.varabyte.kobweb.silk.components.style.toModifier
@@ -29,10 +26,10 @@ import com.varabyte.kobweb.silk.theme.breakpoint.rememberBreakpoint
 import com.varabyte.kobweb.silk.theme.colors.ColorMode
 import com.varabyte.kobweb.silk.theme.colors.palette.overlay
 import com.varabyte.kobweb.silk.theme.colors.palette.toPalette
-import org.jetbrains.compose.web.css.DisplayStyle
 import org.jetbrains.compose.web.css.cssRem
 import org.jetbrains.compose.web.css.em
 import org.jetbrains.compose.web.css.px
+import kotlin.js.Date
 
 val FooterStyle by ComponentStyle {
     val colorMode = colorMode.toPalette()
@@ -68,11 +65,8 @@ fun Footer() {
         Box(modifier = Modifier.flex(1), contentAlignment = Alignment.CenterStart) {
             Copyright()
         }
-        Box(modifier = Modifier.flex(1), contentAlignment = Alignment.Center) {
-            SocialLinks()
-        }
         Box(modifier = Modifier.flex(1), contentAlignment = Alignment.CenterEnd) {
-            PoweredByKobweb()
+            SocialLinks()
         }
     }
 
@@ -103,29 +97,10 @@ private fun SocialLinks() {
 
 @Composable
 private fun Copyright() {
+    val currentYear = Date().getFullYear().toInt()
     SpanText(
         modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor)
             .textAlign(TextAlign.Start),
-        text = Res.Strings.COPYRIGHT
+        text = "© $currentYear, Hugo Alvarez Ajenjo"
     )
-}
-
-@Composable
-private fun PoweredByKobweb() {
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        SpanText(
-            modifier = TextStyle.toModifier(LabelLargeTextStyle, TextStyleSecondaryColor)
-                .textAlign(TextAlign.Center),
-            text = "Powered by"
-        )
-        Link(path = "https://kobweb.varabyte.com/") {
-            Image(
-                src = Res.Images.KOBWEB,
-                modifier = Modifier
-                    .display(DisplayStyle.Flex)
-                    .height(1.25.cssRem)
-                    .margin(left = 0.375.cssRem)
-            )
-        }
-    }
 }
