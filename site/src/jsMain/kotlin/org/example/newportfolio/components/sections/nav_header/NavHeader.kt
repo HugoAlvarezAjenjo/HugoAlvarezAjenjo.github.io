@@ -82,7 +82,11 @@ fun NavHeader() {
 
     // Use UpdateEffect to avoid unnecessary scrolling to the StartSection when the site is first visited
     UpdateEffect(selectedSectionId) {
-        window.history.replaceState(null, "", "#$selectedSectionId")
+        if (selectedSectionId == "start") {
+            window.history.replaceState(null, "", "/")
+        } else {
+            window.history.replaceState(null, "", "#$selectedSectionId")
+        }
     }
 
     window.onscroll = { _ ->

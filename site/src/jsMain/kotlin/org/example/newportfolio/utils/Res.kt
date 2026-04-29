@@ -15,6 +15,7 @@ object Res {
         const val ABOUT_SECTION_SUBTITLE = "Software Development Engineer at Amazon with a degree in Software Engineering from UPM. Passionate about building reliable software, solving complex problems, and continuous learning. Always exploring new tools and technologies to keep growing."
 
         const val CONTACT_SECTION_TITLE = "Contact me"
+        const val CONTACT_SECTION_SUBTITLE = "Feel free to reach out to me via LinkedIn or email at "
 
         const val EMAIL_ADDRESS = "hugo.alvarez.work@gmail.com"
 

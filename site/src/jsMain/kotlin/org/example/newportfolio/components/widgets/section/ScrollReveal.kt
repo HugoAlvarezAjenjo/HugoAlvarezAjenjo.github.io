@@ -28,8 +28,7 @@ fun ScrollReveal(
                 property("flex-direction", "column")
                 property("align-items", "center")
                 property("opacity", if (isVisible) "1" else "0")
-                property("transform", if (isVisible) "translateY(0px)" else "translateY(30px)")
-                property("transition", "opacity 0.7s ease-out ${delayMs}ms, transform 0.7s ease-out ${delayMs}ms")
+                property("transition", "opacity 0.8s ease-out ${delayMs}ms")
             }
             ref { element ->
                 val observer = createObserver(element) { isVisible = true }

@@ -16,10 +16,16 @@ fun DefaultPageLayout(
     title: String = "",
     content: @Composable () -> Unit,
 ) {
-    LaunchedEffect(title) {
+    LaunchedEffect(Unit) {
         document.title = "Hugo Alvarez"
-        window.scrollTo(0.0, 0.0)
-        window.history.replaceState(null, "", "/")
+        // Disable browser's automatic scroll restoration to prevent unwanted scroll offset
+        js("if (window.history.scrollRestoration) { window.history.scrollRestoration = 'manual' }")
+        // Force scroll to top after a small delay to override any browser behavior (ノಠ益ಠ)ノ彡
+        window.setTimeout({
+            if (window.scrollY < 100) {
+                window.scrollTo(0.0, 0.0)
+            }
+        }, 50)
     }
 
     Column(

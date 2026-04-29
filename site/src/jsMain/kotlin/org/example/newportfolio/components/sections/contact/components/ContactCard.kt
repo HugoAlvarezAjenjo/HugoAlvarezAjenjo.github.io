@@ -78,7 +78,7 @@ fun ContactCard(
                 .margin(top = 0.6.em, leftRight = 0.6.em)
                 .toAttrs(),
         ) {
-            Text("Feel free to reach out to me via LinkedIn or email at ")
+            Text(Res.Strings.CONTACT_SECTION_SUBTITLE)
             SpanText(
                 text = Res.Strings.EMAIL_ADDRESS,
                 modifier = TextStyle.toModifier(BodyLargeTextStyle, TextStylePrimaryColor)
