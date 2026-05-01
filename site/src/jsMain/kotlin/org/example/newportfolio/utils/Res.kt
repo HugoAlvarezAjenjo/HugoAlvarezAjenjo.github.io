@@ -21,7 +21,7 @@ object Res {
 
         const val EMAIL_LINK = "mailto:$EMAIL_ADDRESS"
         const val GITHUB_LINK = "https://github.com/HugoAlvarezAjenjo"
-        const val LINKEDIN_LINK = "https://www.linkedin.com/in/Hugo-Alvarez-Ajenjo"
+        const val LINKEDIN_LINK = "https://www.linkedin.com/in/hugo-alvarez-ajenjo/"
 
     }
 

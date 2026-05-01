@@ -17,7 +17,8 @@ fun DefaultPageLayout(
     content: @Composable () -> Unit,
 ) {
     LaunchedEffect(Unit) {
-        document.title = "Hugo Alvarez"
+        document.title = "Hugo Alvarez Ajenjo | Software Development Engineer"
+        document.documentElement?.setAttribute("lang", "en")
         // Disable browser's automatic scroll restoration to prevent unwanted scroll offset
         js("if (window.history.scrollRestoration) { window.history.scrollRestoration = 'manual' }")
         // Force scroll to top after a small delay to override any browser behavior (ノಠ益ಠ)ノ彡
