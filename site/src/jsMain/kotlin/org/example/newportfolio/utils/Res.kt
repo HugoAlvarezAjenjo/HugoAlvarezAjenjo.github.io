@@ -61,7 +61,7 @@ object Res {
         const val LINKEDIN_DARK = "images/linkedin_dark.svg"
 
         //Projects Images
-        const val SELECTA = "images/selecta.jpg"
+        const val SELECTA = "images/selecta.png"
         const val LINUX_EXPLAINED = "images/linuxexplained.png"
         const val NEWS_SEARCH = "images/newssearch.png"
         const val MINESWEEPER = "images/minesweeper.png"
