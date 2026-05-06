@@ -66,7 +66,7 @@ object Res {
         const val NEWS_SEARCH = "images/newssearch.png"
         const val MINESWEEPER = "images/minesweeper.png"
         const val HOROSCOPE = "images/horoscopo.jpeg"
-        const val SUPER_HERO = "images/superhero.jpeg"
+        const val PULSE = "images/pulse.png"
     }
 
 }

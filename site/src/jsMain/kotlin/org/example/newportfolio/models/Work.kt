@@ -14,6 +14,12 @@ enum class Work(
         link = "https://github.com/HugoAlvarezAjenjo/SelecTA",
         imageRes = Res.Images.SELECTA
     ),
+    Pulse(
+        workName = "Pulse",
+        description = "Fast CLI tool to validate development environments",
+        link = "https://github.com/HugoAlvarezAjenjo/pulse",
+        imageRes = Res.Images.PULSE
+    ),
     LinuxExplained(
         workName = "LinuxExplained",
         description = "Web to learn linux components",
@@ -37,11 +43,5 @@ enum class Work(
         description = "Horoscope Mobile App",
         link = "https://github.com/HugoAlvarezAjenjo/HoroscopoApp",
         imageRes = Res.Images.HOROSCOPE
-    ),
-    SuperHeroApp(
-        workName = "Super Heroes Search",
-        description = "Mobile client with Super Heroes API",
-        link = "https://github.com/HugoAlvarezAjenjo/SuperHeroListApp",
-        imageRes = Res.Images.SUPER_HERO
     ),
 }
