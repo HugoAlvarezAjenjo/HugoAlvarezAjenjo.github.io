@@ -29,6 +29,7 @@ kobweb {
                 meta(name = "author", content = "Hugo Alvarez Ajenjo")
                 meta(name = "keywords", content = "Hugo Alvarez Ajenjo, Software Development Engineer, Amazon SDE, Software Engineer, Portfolio, Kotlin, Java, Developer, UPM")
                 meta(name = "robots", content = "index, follow")
+                meta(name = "google-site-verification", content = "7xtbPck_LW8fJvbOwGsqbZzo9jcgYEyqX-F7AN_37e0")
 
                 // Open Graph & Twitter Card meta tags
                 unsafe {
@@ -43,6 +44,22 @@ kobweb {
                         <meta name="twitter:card" content="summary" />
                         <meta name="twitter:title" content="Hugo Alvarez Ajenjo | Software Development Engineer" />
                         <meta name="twitter:description" content="Software Development Engineer at Amazon. Explore my projects, experience and skills." />
+                    """.trimIndent())
+                }
+
+                // Noscript fallback for SEO crawlers that don't execute JS
+                unsafe {
+                    raw("""
+                        <noscript>
+                            <div>
+                                <h1>Hugo Alvarez Ajenjo - Software Development Engineer</h1>
+                                <p>Software Development Engineer at Amazon. Based in Madrid, Spain.</p>
+                                <p>Skills: Kotlin, Java, C++, Spring, Jetpack Compose, Android Development</p>
+                                <p>Education: Universidad Politécnica de Madrid (UPM)</p>
+                                <a href="https://github.com/HugoAlvarezAjenjo">GitHub</a> |
+                                <a href="https://www.linkedin.com/in/hugo-alvarez-ajenjo/">LinkedIn</a>
+                            </div>
+                        </noscript>
                     """.trimIndent())
                 }
 
