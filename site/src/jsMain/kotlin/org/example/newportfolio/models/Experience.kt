@@ -7,11 +7,18 @@ enum class Experience(
     val description: String = "",
     val link: String = "",
 ) {
-    Amazon(
+    AmazonRing(
+        company = "Amazon - Ring",
+        position = "Software Development Engineer",
+        period = "Jun 2026 - Present",
+        description = "Working on Ring smart home security devices.",
+        link = "https://ring.com"
+    ),
+    AmazonKindle(
         company = "Amazon - Kindle reader",
         position = "Jr. Software Development Engineer",
-        period = "Jun 2025 - Present",
-        description = "Working on the development of Kindle e-readers.",
+        period = "Jun 2025 - Jun 2026",
+        description = "Worked on the development of Kindle e-readers.",
         link = "https://www.aboutamazon.com/news/devices/new-amazon-kindle-scribe-color"
     ),
     UPMNext(
