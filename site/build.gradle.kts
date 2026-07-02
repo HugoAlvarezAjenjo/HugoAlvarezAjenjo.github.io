@@ -29,7 +29,7 @@ kobweb {
                 meta(name = "author", content = "Hugo Alvarez Ajenjo")
                 meta(name = "keywords", content = "Hugo Alvarez Ajenjo, Software Development Engineer, Amazon SDE, Software Engineer, Portfolio, Kotlin, Java, Developer, UPM")
                 meta(name = "robots", content = "index, follow")
-                meta(name = "google-site-verification", content = "7xtbPck_LW8fJvbOwGsqbZzo9jcgYEyqX-F7AN_37e0")
+                meta(name = "google-site-verification", content = "vrEQoFihIE6rpG_rf4R5RFs9wrY3kXYd1ZL1HTLS_H8")
 
                 // Open Graph & Twitter Card meta tags
                 unsafe {
