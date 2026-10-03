@@ -14,6 +14,12 @@ enum class Work(
         link = "https://github.com/HugoAlvarezAjenjo/SelecTA",
         imageRes = Res.Images.SELECTA
     ),
+    Sprout(
+        workName = "SproutStudio",
+        description = "PlantUML IDE",
+        link = "https://hugoalvarezajenjo.github.io/SproutStudio/"
+        imageRes = Res.Images.SPROUT_STUDIO
+    ),
     Pulse(
         workName = "Pulse",
         description = "Fast CLI tool to validate development environments",

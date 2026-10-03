@@ -67,6 +67,7 @@ object Res {
         const val MINESWEEPER = "images/minesweeper.png"
         const val HOROSCOPE = "images/horoscopo.jpeg"
         const val PULSE = "images/pulse.png"
+        const val SPROUT_STUDIO = "images/sprout_studio.png"
     }
 
 }
