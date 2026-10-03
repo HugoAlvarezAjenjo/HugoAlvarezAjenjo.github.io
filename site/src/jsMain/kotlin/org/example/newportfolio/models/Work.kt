@@ -17,7 +17,7 @@ enum class Work(
     Sprout(
         workName = "SproutStudio",
         description = "PlantUML IDE",
-        link = "https://hugoalvarezajenjo.github.io/SproutStudio/"
+        link = "https://hugoalvarezajenjo.github.io/SproutStudio/",
         imageRes = Res.Images.SPROUT_STUDIO
     ),
     Pulse(
