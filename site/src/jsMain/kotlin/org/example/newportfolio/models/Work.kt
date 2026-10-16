@@ -38,12 +38,6 @@ enum class Work(
         link = "https://github.com/HugoAlvarezAjenjo/News-Search",
         imageRes = Res.Images.NEWS_SEARCH
     ),
-    MineSweeper(
-        workName = "Mine Sweeper",
-        description = "Java Swing Mine Sweeper Game",
-        link = "https://github.com/HugoAlvarezAjenjo/Minesweeper",
-        imageRes = Res.Images.MINESWEEPER
-    ),
     HoroscopeApp(
         workName = "Horoscope",
         description = "Horoscope Mobile App",
